@@ -12,6 +12,8 @@ running on the Ubuntu system
 
 that's it, now check in your data folder we are going to see the image of the face
 
+it will give exact frame where algorithm was detecting the face
+
 
 
 

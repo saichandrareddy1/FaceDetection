@@ -8,7 +8,6 @@ Created on Wed Sep  9 11:34:40 2020
 
 # OpenCV program to detect face in real time 
 # import libraries of python OpenCV  
-# where its functionality resides 
 import cv2  
   
 # load the required trained XML classifiers 
@@ -44,7 +43,7 @@ while 1:
   
         # Detects eyes of different sizes in the input image 
         #eyes = eye_cascade.detectMultiScale(roi_gray)  
-        cv2.imwrite(r"D:\Euprime\FaceRecognition\data\image{}.jpg".format(count), img[y:y+h, x:x+w])
+        cv2.imwrite(r"C:\Users\SUPERMAN\Documents\GitHub\FaceDetection\data\image{}.jpg".format(count), img[y:y+h, x:x+w])
       
     # Display an image in a window 
     cv2.imshow('img',img) 
