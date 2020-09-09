@@ -40,8 +40,6 @@ def VideoStream(video):
         for (x,y,w,h) in faces: 
             # To draw a rectangle in a face  
             cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,0),2)  
-            roi_gray = gray[y:y+h, x:x+w] 
-            roi_color = img[y:y+h, x:x+w] 
             
             #Saving the detected face in the Live Stream
             cv2.imwrite(os.getcwd()+"\dataVideo\image{}.jpg".format(count), img[y:y+h, x:x+w])
