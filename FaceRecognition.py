@@ -9,7 +9,7 @@ Created on Wed Sep  9 11:34:40 2020
 # OpenCV program to detect face in real time 
 # import libraries of python OpenCV  
 import cv2  
-  
+import os
 # load the required trained XML classifiers 
 # https://github.com/Itseez/opencv/blob/master/ 
 # data/haarcascades/haarcascade_frontalface_default.xml 
@@ -40,10 +40,9 @@ while 1:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,0),2)  
         roi_gray = gray[y:y+h, x:x+w] 
         roi_color = img[y:y+h, x:x+w] 
-  
-        # Detects eyes of different sizes in the input image 
-        #eyes = eye_cascade.detectMultiScale(roi_gray)  
-        cv2.imwrite(r"C:\Users\SUPERMAN\Documents\GitHub\FaceDetection\data\image{}.jpg".format(count), img[y:y+h, x:x+w])
+        
+        #Saving the detected face in the Live Stream
+        cv2.imwrite(os.getcwd()+"\data\image{}.jpg".format(count), img[y:y+h, x:x+w])
       
     # Display an image in a window 
     cv2.imshow('img',img) 
