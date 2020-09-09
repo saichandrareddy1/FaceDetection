@@ -1,21 +1,37 @@
 # FaceDetection
-Finding the face in the video and saving it in a folder
+**Face detection** is a branch of **image processing** that uses machine learning to **detect faces in images, videos or on live stream**
 
 
 ### FaceDetection is the Algorithm to find the face in the video or in Live Stream
 
 
-Running on the Ubuntu system 
+* Running on the Ubuntu system 
 
-    > python3 FaceRecognition.py
+### LiveDetection 
+
+    > python3 FaceRecognition.py // For Live detection of the video
+
+### ImageDetection
+
+    > python3 ImageDetection.py // for Images 
+
+### VideoDetection
+
+    > python3 VideoStream.py // For videos
+
 
 * Running on Windows 
 
 1. Open your favirote idle
 2. clone this repo
 3. open FaceRecognition.py file
-4. run FaceRecognition.py
+4. run FaceRecognition.py // For Live
 5. Now visit your **data** folder, you can file faces in this folder
+
+* Work with Images and Videos also on Windows
+
+:point_right: Just change the File from ***Point 4***
+
 
 that's it, now check in your data folder we are going to see the image of the face
 
